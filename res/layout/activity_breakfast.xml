@@ -18,7 +18,7 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-        <Button
+    <Button
         android:id="@+id/btn_refresh"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -26,11 +26,11 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Refresh" />
-    
+
     <ImageView
         android:id="@+id/img_photo"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart" />
 
 </LinearLayout>

@@ -82,7 +82,7 @@ public class BreakfastActivity extends Activity implements DownloadGoogleSpreads
 				
 				try {
 					int color = Color.parseColor(bgColor);
-					mImg.setBackgroundColor(color);
+					//mImg.setBackgroundColor(color);
 					mLinContainer.setBackgroundColor(color);
 				} catch (Exception e) {
 					Log.v("blarg", "problem with color " + e.getMessage());
