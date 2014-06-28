@@ -7,6 +7,8 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,6 +33,19 @@ public class BreakfastActivity extends Activity implements DownloadGoogleSpreads
 		
 		mPicasso = Picasso.with(this);
 		
+		(findViewById(R.id.btn_refresh)).setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				loadData();
+				
+			}
+		});
+		
+		loadData();
+	}
+	
+	void loadData() {
 		GhettoApi.downloadGoogleSpreadsheetData(SPREADSHEET_KEY, BreakfastActivity.this);
 	}
 
