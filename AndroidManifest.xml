@@ -17,6 +17,7 @@
         android:theme="@android:style/Theme.Light.NoTitleBar" >
         <activity
             android:name="com.example.whatihadforbreakfast.BreakfastActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

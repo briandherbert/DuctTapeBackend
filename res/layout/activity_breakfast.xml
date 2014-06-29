@@ -14,7 +14,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Loading..."
+        android:text="@string/title"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -22,14 +22,15 @@
         android:id="@+id/img_photo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:contentDescription="Photo" />
     
     <TextView
         android:id="@+id/lbl_ad"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="ADVERTISEMENT"
+        android:text="@string/advertisement"
         android:background="#000"
         android:textColor="#f00"
         android:textSize="24sp"
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:gravity="center"
-        android:text="Refresh" />
+        android:text="@string/refresh" />
         
 
 </LinearLayout>

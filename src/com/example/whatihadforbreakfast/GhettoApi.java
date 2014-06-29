@@ -106,7 +106,7 @@ public class GhettoApi {
 
 	private static String getPageSourceAsDesktop(String urlStr, String searchFor) {
 		if (DEBUG)
-			Log.v(TAG, "getting page" + urlStr);
+			Log.v(TAG, "Getting page src for " + urlStr);
 
 		URL url = null;
 		String inputLine = "";
@@ -189,7 +189,6 @@ public class GhettoApi {
 		for (int rowIdx = 1; rowIdx < rows.length; rowIdx++) {
 			colsList = getColumnsFromRow(rows[rowIdx]);
 
-			Log.v("blarg", "cols in row " + rowIdx + " is " + colsList.size());
 			if (colsList.size() != numCols) {
 				if (DEBUG)
 					Log.w(TAG,

@@ -3,6 +3,8 @@
 
     <string name="app_name">WhatIHadForBreakfast</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="title">Hello world!</string>
+    <string name="refresh">Refresh</string>
+    <string name="advertisement">ADVERTISEMENT</string>
+    
 </resources>
