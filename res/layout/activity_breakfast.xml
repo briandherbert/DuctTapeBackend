@@ -14,23 +14,34 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/hello_world"
+        android:text="Loading..."
         android:textSize="24sp"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btn_refresh"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Refresh" />
 
     <ImageView
         android:id="@+id/img_photo"
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <TextView
+        android:id="@+id/lbl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="ADVERTISEMENT"
+        android:background="#000"
+        android:textColor="#f00"
+        android:textSize="24sp"
+        android:textStyle="bold" />    
+    
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:scaleType="fitStart" />
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Refresh" />
+        
 
 </LinearLayout>

@@ -137,6 +137,7 @@ public class GhettoApi {
 			}
 		}
 
+		if (DEBUG) Log.v(TAG, "Got csv:\n" + inputLine);
 		return inputLine;
 	}
 
@@ -168,15 +169,15 @@ public class GhettoApi {
 			return null;
 		}
 
-		List<String> firstColsList = getColumnsFromRow(rows[0]);
+		List<String> colsList = getColumnsFromRow(rows[0]);
 
-		if (firstColsList == null || firstColsList.size() == 0) {
+		if (colsList == null || colsList.size() == 0) {
 			if (DEBUG)
 				Log.w(TAG, "Error getting first row's columns!");
 			return null;
 		}
 
-		String[] firstRowCols = firstColsList.toArray(new String[firstColsList
+		String[] firstRowCols = colsList.toArray(new String[colsList
 				.size()]);
 
 		numCols = firstRowCols.length;
@@ -186,7 +187,7 @@ public class GhettoApi {
 		rowColData[0] = firstRowCols;
 
 		for (int rowIdx = 1; rowIdx < rows.length; rowIdx++) {
-			List<String> colsList = getColumnsFromRow(rows[rowIdx]);
+			colsList = getColumnsFromRow(rows[rowIdx]);
 
 			Log.v("blarg", "cols in row " + rowIdx + " is " + colsList.size());
 			if (colsList.size() != numCols) {
@@ -196,7 +197,7 @@ public class GhettoApi {
 				return null;
 			}
 
-			String[] cols = firstColsList.toArray(new String[firstColsList
+			String[] cols = colsList.toArray(new String[colsList
 					.size()]);
 
 			rowColData[rowIdx] = cols;
