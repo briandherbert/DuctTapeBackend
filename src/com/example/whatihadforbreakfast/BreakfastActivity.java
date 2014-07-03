@@ -2,9 +2,13 @@ package com.example.whatihadforbreakfast;
 
 import com.example.whatihadforbreakfast.GhettoApi.DownloadGoogleSpreadsheetDataListener;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
+import com.squareup.picasso.Picasso.LoadedFrom;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +16,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Quick-and-dirty activity demonstrating how to implement {@link GhettoApi}
@@ -105,7 +110,24 @@ public class BreakfastActivity extends Activity implements
 
 				// Pic
 				if (picUrl != null) {
-					mPicasso.load(picUrl).into(mImg);
+					mPicasso.load(picUrl).into(new Target() {
+                        
+                        @Override
+                        public void onPrepareLoad(Drawable arg0) {
+                            // TODO Auto-generated method stub                            
+                        }
+                        
+                        @Override
+                        public void onBitmapLoaded(Bitmap bmp, LoadedFrom arg1) {
+                            mImg.setImageBitmap(bmp);                            
+                        }
+                        
+                        @Override
+                        public void onBitmapFailed(Drawable arg0) {
+                            Log.w(TAG, "Failed to load image at " + picUrl);
+                            Toast.makeText(BreakfastActivity.this, "Image failed to download!", Toast.LENGTH_LONG).show();                            
+                        }
+                    });
 				}
 
 				// Background color
