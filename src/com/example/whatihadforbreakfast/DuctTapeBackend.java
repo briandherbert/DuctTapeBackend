@@ -23,18 +23,18 @@ import android.util.Log;
  * <li>Have your activity implement
  * {@link DownloadGoogleSpreadsheetDataListener}
  * <li>Call
- * {@link GhettoApi#downloadGoogleSpreadsheetData(String, DownloadGoogleSpreadsheetDataListener)}
+ * {@link DuctTapeBackend#downloadGoogleSpreadsheetData(String, DownloadGoogleSpreadsheetDataListener)}
  * using the spreadsheet key and the listener
  * </ol>
  * 
  * That'll get you the csv as a big string. To parse it out to a String[][], use
- * {@link GhettoApi#parseCsvToRowColData(String)}
+ * {@link DuctTapeBackend#parseCsvToRowColData(String)}
  * 
  * @author brianherbert <briandherbert@gmail.com>
  * 
  */
-public class GhettoApi {
-	public static final String TAG = GhettoApi.class.getSimpleName();
+public class DuctTapeBackend {
+	public static final String TAG = DuctTapeBackend.class.getSimpleName();
 
 	/** Used to toggle logging */
 	public static final boolean DEBUG = true;
@@ -42,7 +42,7 @@ public class GhettoApi {
 	/** Max chars to read from the spreadsheet */
 	public static final int MAX_PAGE_SRC = 300000;
 
-	/** Placeholder for error response (told you this was ghetto) */
+	/** Placeholder for error response (remember, Duct Tape) */
 	public static final String ERROR_RESULT = "XXXERRORXXX";
 
 	public static final char QUOTE = '"';

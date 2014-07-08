@@ -1,6 +1,6 @@
 package com.example.whatihadforbreakfast;
 
-import com.example.whatihadforbreakfast.GhettoApi.DownloadGoogleSpreadsheetDataListener;
+import com.example.whatihadforbreakfast.DuctTapeBackend.DownloadGoogleSpreadsheetDataListener;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 import com.squareup.picasso.Picasso.LoadedFrom;
@@ -19,7 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Quick-and-dirty activity demonstrating how to implement {@link GhettoApi}
+ * Quick-and-dirty activity demonstrating how to implement {@link DuctTapeBackend}
  * 
  * The title, image url, background color, and ad presence are configurable by
  * changing the respective columns in the {@link #ROW_IDX} row of a Google doc
@@ -31,7 +31,7 @@ public class BreakfastActivity extends Activity implements
 		DownloadGoogleSpreadsheetDataListener {
 	static final String TAG = BreakfastActivity.class.getSimpleName();
 
-	static final String SPREADSHEET_KEY = "18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg";
+	//static final String SPREADSHEET_KEY = "18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg";
 
 	// Table description
 	static final int ROW_IDX = 1;
@@ -49,6 +49,7 @@ public class BreakfastActivity extends Activity implements
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+	    Log.v(TAG, "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_breakfast);
 
@@ -75,13 +76,13 @@ public class BreakfastActivity extends Activity implements
 	 * Download the Google Doc spreadsheet as csv
 	 */
 	void loadData() {
-		GhettoApi.downloadGoogleSpreadsheetData(SPREADSHEET_KEY,
+		DuctTapeBackend.downloadGoogleSpreadsheetData("18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg",
 				BreakfastActivity.this);
 	}
 
 	@Override
 	public void onSpreadsheetDataLoaded(String csv) {
-		final String[][] rowsCols = GhettoApi.parseCsvToRowColData(csv);
+		final String[][] rowsCols = DuctTapeBackend.parseCsvToRowColData(csv);
 
 		// We should have three columns of data; the first row is col names, the
 		// second is vals
@@ -119,6 +120,7 @@ public class BreakfastActivity extends Activity implements
                         
                         @Override
                         public void onBitmapLoaded(Bitmap bmp, LoadedFrom arg1) {
+                            Log.v(TAG, "Loaded image");
                             mImg.setImageBitmap(bmp);                            
                         }
                         
