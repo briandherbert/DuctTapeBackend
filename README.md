@@ -8,9 +8,18 @@ WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick
   - Very quick and easy to use
   - A good way to get engineers to make fun of you
 
-Here's an example. I make a Google spreadsheet
+Here's an example. I make a Google spreadsheet like this:
 
 ![](/../photos/photos/fattyDoc.png?raw=true "Optional Title")
+
+Which, in the WhatIHadForBreakfast app, looks like this:
+![](/../photos/photos/fattyScreen.png?raw=true "Optional Title")
+
+Then I change the cells in my spreadsheet to this:
+![](/../photos/photos/spreadSheetCharms.png?raw=true "Optional Title")
+
+And my app changes when it fetches the data again (restart or hit "refresh"):
+![](/../photos/photos/charmsScreen.png?raw=true "Optional Title")
 
 
 The simplest way to use it is to copy
