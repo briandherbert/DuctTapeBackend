@@ -12,7 +12,7 @@ WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick
 Demo
 -----------
 
-So for the WhatIHadForBreakfast app, I make a Google spreadsheet like this:
+For the WhatIHadForBreakfast app, I made a Google spreadsheet like this:
 
 ![](/../photos/photos/fattyDoc.png?raw=true "Optional Title")
 
@@ -30,5 +30,6 @@ And my app changes when it fetches the data again (restart or hit "refresh"):
 
 
 To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here.
+
 
 [1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
