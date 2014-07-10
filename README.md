@@ -10,7 +10,7 @@ WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick
 
 Here's an example. I make a Google spreadsheet
 
-(/../photos/photos/fattyDoc.png?raw=true "Optional Title")
+![](/../photos/photos/fattyDoc.png?raw=true "Optional Title")
 
 
 The simplest way to use it is to copy
