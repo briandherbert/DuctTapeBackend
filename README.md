@@ -14,7 +14,7 @@ Demo
 
 For the WhatIHadForBreakfast app, I made a Google spreadsheet like this:
 
-![](/../photos/photos/fattyDoc.png?raw=true "Optional Title")
+![](/../photos/photos/breakfastQuick.gif?raw=true "Optional Title")
 
 Which, in the app, looks like this:
 
