@@ -29,10 +29,6 @@ And my app changes when it fetches the data again (restart or hit "refresh"):
 ![](/../photos/photos/charmsScreen.png?raw=true "Optional Title")
 
 
-The simplest way to use it is to copy
-[DuctTapeBackend.java][1]
+To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here.
 
-
-[1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here.
-
-Once your app has the 
+[1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
