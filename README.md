@@ -12,24 +12,16 @@ WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick
 Demo
 -----------
 
-For the WhatIHadForBreakfast app, I made a Google spreadsheet like this:
+On the left is the Google Docs spreadsheet, on the right is an Android emulator running the WhatIHadForBreakfast app:
 
 ![](/../photos/photos/breakfastQuick.gif?raw=true "Optional Title")
 
-Which, in the app, looks like this:
-
-![](/../photos/photos/fattyScreen.png?raw=true "Optional Title")
-
-Then I change the cells in my spreadsheet to this:
-
-![](/../photos/photos/spreadsheetCharms.png?raw=true "Optional Title")
-
-And my app changes when it fetches the data again (restart or hit "refresh"):
-
-![](/../photos/photos/charmsScreen.png?raw=true "Optional Title")
+If that gif isn't working, here are screenshots of the doc and emulator [before][2] and [after][3]
 
 
 To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here.
 
 
 [1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
+[2]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/photos/photos/charmsSides.png
+[3]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/photos/photos/fattySides.png
