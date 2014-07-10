@@ -8,8 +8,15 @@ WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick
   - Very quick and easy to use
   - A good way to get engineers to make fun of you
 
-The simplest way to use it is to copy 
+Here's an example. I make a Google spreadsheet
+
+(photos/photos/fattyDoc.png?raw=true "Optional Title")
+
+
+The simplest way to use it is to copy
 [DuctTapeBackend.java][1]
 
 
-[1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java
+[1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here.
+
+Once your app has the 
