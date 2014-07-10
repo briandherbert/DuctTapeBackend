@@ -13,12 +13,15 @@ Here's an example. I make a Google spreadsheet like this:
 ![](/../photos/photos/fattyDoc.png?raw=true "Optional Title")
 
 Which, in the WhatIHadForBreakfast app, looks like this:
+
 ![](/../photos/photos/fattyScreen.png?raw=true "Optional Title")
 
 Then I change the cells in my spreadsheet to this:
-![](/../photos/photos/spreadSheetCharms.png?raw=true "Optional Title")
+
+![](/../photos/photos/spreadsheetCharms.png?raw=true "Optional Title")
 
 And my app changes when it fetches the data again (restart or hit "refresh"):
+
 ![](/../photos/photos/charmsScreen.png?raw=true "Optional Title")
 
 
