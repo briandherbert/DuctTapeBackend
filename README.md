@@ -9,4 +9,7 @@ WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick
   - A good way to get engineers to make fun of you
 
 The simplest way to use it is to copy 
-[https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java](DuctTapeBackend) into
+[DuctTapeBackend.java][1]
+
+
+[1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java
