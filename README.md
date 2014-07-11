@@ -3,7 +3,7 @@ DuctTapeBackend
 
 WhatIHadForBreakfast is an Android app to demo DuctTapeBackend, which is a quick-and-dirty way to supply your Android (for now) app with data from afar. You make a Google spreadsheet, and your app pulls down all the values from it. Like duct tape, it is:
 
-  - Single sided. From the device's perspective, the data is read-only
+  - Single-sided. From the device's perspective, the data is read-only
   - Not the Right Way to solve the problem
   - Good for prototyping and solving problems that aren't mission-critical
   - Very quick and easy to use
@@ -17,7 +17,7 @@ On the left is the Google Docs spreadsheet, on the right is an Android emulator 
 
 ![](/../photos/photos/breakfastQuick.gif?raw=true "Optional Title")
 
-If that gif isn't working, here are screenshots of the doc and emulator [before][2] and [after][3].
+The loop makes it a little hard to folllow, but it starts with the "Fatty Special" and changes to "Lucky Charms". If that gif isn't working, here are screenshots of the doc and emulator [before][2] and [after][3].
 
 To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here. The short version is:
 
