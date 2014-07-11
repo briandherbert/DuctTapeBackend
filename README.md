@@ -41,7 +41,7 @@ The http call made to get the CSV data can change at Google's whim, and this wil
   - Strings throughout your app that might change or need polish later, like "about the author". Probably not great if you need translations.
   - Updating values without dealing with code. Make an app that shows your middle school's last basketball game results, then give a parent access to the spreadsheet for editing.
   - Game stuff. Use values for level-building, riddle-of-the-day, monthy geocache clues.
-  - Themeing that reacts to real world events. The background image is a pic of the highest-grossing movie.
+  - Theming that reacts to real world events. The background image is a pic of the highest-grossing movie.
 
 
 [1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
