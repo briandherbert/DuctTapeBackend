@@ -11,7 +11,7 @@ WhatIHadForBreakfast is an Android app to demo **DuctTapeBackend**, which is a q
   - A good way to get engineers to mock you
 
 
-In action
+Demo
 -----------
 
 On the left is the Google Docs spreadsheet, on the right is an Android emulator running the WhatIHadForBreakfast app. The app uses DuctTapeBackend to fetch data from the spreadsheet and then updates the UI:
