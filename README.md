@@ -20,6 +20,11 @@ On the left is the Google Docs spreadsheet, on the right is an Android emulator 
 
 The loop makes it a little hard to folllow, but we start with "Fatty Special", then change to "Lucky Charms". If that gif isn't working, here are screenshots of the doc and emulator [before][2] and [after][3]. The title, background color, image, and ad presence are all determined by the doc's values. I might look into building an API if my app got more complex or needed user-dependent behavior, but if I want to turn off ads for my users on days when [LOCLAS SPORTS TEAM] wins, I can do that with minor effort and no expense.
 
+The backend doc used in WhatIHadForBreafast is:
+https://docs.google.com/spreadsheets/d/18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg/edit#gid=0
+
+To use your own doc as the source, copy the table into a new spreadsheet doc. Run the WhatIHadForBreafast app, and long-press the title. This will allow you to enter your doc's key (might be quicker to copy/paste from your device's browser).
+
 
 Have a go
 -----------
