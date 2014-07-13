@@ -31,7 +31,7 @@ public class BreakfastActivity extends Activity implements
 		DownloadGoogleSpreadsheetDataListener {
 	static final String TAG = BreakfastActivity.class.getSimpleName();
 
-	//static final String SPREADSHEET_KEY = "18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg";
+	static final String SPREADSHEET_KEY = "18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg";
 
 	// Table description
 	static final int ROW_IDX = 1;
@@ -76,7 +76,7 @@ public class BreakfastActivity extends Activity implements
 	 * Download the Google Doc spreadsheet as csv
 	 */
 	void loadData() {
-		DuctTapeBackend.downloadGoogleSpreadsheetData("18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg",
+		DuctTapeBackend.downloadGoogleSpreadsheetData(SPREADSHEET_KEY,
 				BreakfastActivity.this);
 	}
 
