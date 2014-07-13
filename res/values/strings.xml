@@ -6,5 +6,9 @@
     <string name="title">Hello world!</string>
     <string name="refresh">Refresh</string>
     <string name="advertisement">ADVERTISEMENT</string>
-    
+    <string name="btn_ok">OK</string>
+    <string name="btn_reset">Reset</string>
+    <string name="toast_custom_key">Using custom spreadsheet key</string>    
+    <string name="dialog_custom_key_title">Spreadsheet key:</string>    
+    <string name="fetching_message">Downloading data...</string>      
 </resources>

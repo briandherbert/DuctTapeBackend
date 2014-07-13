@@ -53,7 +53,7 @@ public class DuctTapeBackend {
 	 * placeholder will be replaced with a spreadsheet key. Note that this is
 	 * fragile and the whole thing will fall apart if Google changes this
 	 */
-	public static final String CSV_URL = "https://docs.google.com/spreadsheets/d/%s/export?gid=0&format=csv";
+	public static final String CSV_URL = "https://docs.google.com/spreadsheets/d/%s/export?format=csv";
 
 	public static interface DownloadGoogleSpreadsheetDataListener {
 		/**
@@ -95,6 +95,10 @@ public class DuctTapeBackend {
 			String csv = getPageSourceAsDesktop(url, null);
 			if (listener != null) {
 				if (csv.indexOf(ERROR_RESULT) == 0) {
+					String errorMsg = csv.substring(ERROR_RESULT
+							.length());
+					
+					Log.e(TAG, "Error getting values: " + errorMsg);
 					listener.onSpreadsheetDataFailed(csv.substring(ERROR_RESULT
 							.length()));
 				} else {
@@ -118,7 +122,13 @@ public class DuctTapeBackend {
 					.openConnection();
 
 			connection.setRequestMethod("GET");
-			connection.setConnectTimeout(3000);
+			connection.setConnectTimeout(5000);
+			
+			// Ensure that this is a csv
+			String fileInfo = connection.getHeaderField("Content-Disposition");
+			if(fileInfo == null || !fileInfo.contains(".csv")) {
+			    throw new Exception("File isn't csv formatted!");
+			}
 
 			InputStream stream = connection.getInputStream();
 			in = new BufferedReader(new InputStreamReader(stream));
