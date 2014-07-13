@@ -36,13 +36,14 @@ To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project
 Other thoughts
 -----------
 
-The http call made to get the CSV data can change at Google's whim, and this will break if it does. Also, sometimes it takes a couple seconds for Google Docs to respond with the data. So use caution; this is duct tape. There are more solid solutions built around this idea that involve publishing your doc to the Web as a public page, then getting the data back as JSON. If you don't mind that possible fragility, here are some other possible uses:
+The http call made to get the CSV data can change at Google's whim, and this will break if it does. Also, sometimes it takes a couple seconds for Google Docs to respond with the data. And I've seen some existing docs return xlxs data, even when requesting csv. So use caution; this is duct tape. If you don't mind that possible fragility, here are some other possible uses:
 
   - Strings throughout your app that might change or need polish later, like "about the author". Probably not great if you need translations.
   - Updating values without dealing with code. Make an app that shows your middle school's last basketball game results, then give a parent access to the spreadsheet for editing.
   - Game stuff. Use values for level-building, riddle-of-the-day, monthy geocache clues.
   - Theming that reacts to real world events. The background image is a pic of the highest-grossing movie.
 
+There are more solid solutions built around this idea that involve publishing your doc to the Web as a public page, then getting the data back as JSON, though in my tests, the server response was very slow and the payload was padded with extra data.
 
 [1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
 [2]:https://raw.githubusercontent.com/briandherbert/WhatIHadForBreakfast/photos/photos/fattySides.png
