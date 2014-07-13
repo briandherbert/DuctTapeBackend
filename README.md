@@ -50,6 +50,9 @@ The http call made to get the CSV data can change at Google's whim, and this wil
 
 There are more solid solutions built around this idea that involve publishing your doc to the Web as a public page, then getting the data back as JSON, though in my tests, the server response was very slow and the payload was padded with extra data.
 
+Thanks to Jake Wharton's [Picasso][4] for making image-downloading easy.
+
 [1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
 [2]:https://raw.githubusercontent.com/briandherbert/WhatIHadForBreakfast/photos/photos/fattySides.png
 [3]:https://raw.githubusercontent.com/briandherbert/WhatIHadForBreakfast/photos/photos/charmsSides.png
+[4]:https://github.com/square/picasso
