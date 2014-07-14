@@ -29,7 +29,7 @@ To use your own doc as the source, copy the table into a new spreadsheet doc. Ru
 Have a go
 -----------
 
-To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here. The short version is:
+To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here, either by downloading the code, or just the apk at the project's root. The short version is:
 
 1. Make a Google Doc, and set the Sharing permission to "Anyone with a link can view".
 2. Copy the doc key from the URL. It's that long string of letters, numbers, and dashes.
@@ -46,7 +46,7 @@ The http call made to get the CSV data can change at Google's whim, and this wil
   - Strings throughout your app that might change or need polish later, like "about the author". Probably not great if you need translations.
   - Updating values without dealing with code. Make an app that shows your middle school's last basketball game results, then give a parent access to the spreadsheet for editing.
   - Game stuff. Use values for level-building, riddle-of-the-day, monthy geocache clues.
-  - Theming that reacts to real world events. The background image is a pic of the highest-grossing movie.
+  - Theming that reacts to real world events. The background image is a pic of the highest-grossing weekend movie.
 
 There are more solid solutions built around this idea that involve publishing your doc to the Web as a public page, then getting the data back as JSON, though in my tests, the server response was very slow and the payload was padded with extra data.
 
