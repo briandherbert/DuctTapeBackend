@@ -1,7 +1,7 @@
 DuctTapeBackend
 =========
 
-WhatIHadForBreakfast is an Android app to demo **DuctTapeBackend**, which is a quick-and-dirty way to supply your Android (for now) app with data from afar. No need to deal with servers or even network calls. You make a Google spreadsheet, and your app pulls down all the values from it. Like duct tape, it is:
+WhatIHadForBreakfast is an Android app to demo **DuctTapeBackend**, which is a quick-and-dirty way to supply your Android (for now) app with data from afar. No need for you to deal with servers or even network calls. You make a Google spreadsheet, and your app pulls down all the values from it. Like duct tape, it is:
 
   - Single-sided. From the device's perspective, the data is read-only
   - Good for prototyping and issues that aren't mission-critical
