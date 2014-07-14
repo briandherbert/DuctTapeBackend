@@ -10,5 +10,5 @@
     <string name="btn_reset">Reset</string>
     <string name="toast_custom_key">Using custom spreadsheet key</string>    
     <string name="dialog_custom_key_title">Spreadsheet key:</string>    
-    <string name="fetching_message">Downloading data...</string>      
+    <string name="fetching_message">Downloading data…</string>      
 </resources>
