@@ -214,7 +214,7 @@ public class BreakfastActivity extends Activity implements
 	
 	private void setSpreadsheetKey(String key) {
 		Log.v(TAG, "Setting custom spreadsheet key to " + key);
-		SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_MULTI_PROCESS);
+		SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
 		SharedPreferences.Editor editor = prefs.edit();
 		
 		if (key == null) {
