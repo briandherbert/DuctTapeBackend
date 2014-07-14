@@ -8,7 +8,7 @@ WhatIHadForBreakfast is an Android app to demo **DuctTapeBackend**, which is a q
   - Very quick and easy to use
   - A fair-weather friend. If Google changes their csv-converting URLs, all is lost
   - Not the Right Way to solve most problems
-  - A good way to get engineers to mock you
+  - A good way to get engineers to make fun of you
 
 
 Demo
