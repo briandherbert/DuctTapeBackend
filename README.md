@@ -31,7 +31,7 @@ Have a go
 
 To try it out yourself, copy [DuctTapeBackend.java][1] into your Android project and follow the javadoc instructions. Or you can just use the WhatIHadForBreakfast app provided here, either by downloading the code or the apk at the project's root. For convenience, here's the gist of the integration process:
 
-1. Make a Google Doc, and set the Sharing permission to "Anyone with a link can view".
+1. Make a Google Doc Spreadsheet, and set the Sharing permission to "Anyone with a link can view".
 2. Copy the doc key from the URL. It's that long string of letters, numbers, and dashes.
 3. Call **DuctTapeBackend.downloadGoogleSpreadsheetData()**, passing in the doc key and a listener (which is the Activity itself in the sample app) for when the data is done.
 4. Your listener will get the spreadsheet data back as a CSV (comma separated values) String. If you want to convert the data to a two-dimensional String for of row, column cell data, call **DuctTapeBackend.parseCsvToRowColData()**
