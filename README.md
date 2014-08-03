@@ -18,7 +18,7 @@ On the left is the Google Docs spreadsheet, on the right is an Android emulator 
 
 ![](/../photos/photos/breakfastQuick.gif?raw=true "Optional Title")
 
-The loop makes it a little hard to folllow, but we start with "Fatty Special", then change to "Lucky Charms". If that gif isn't working, here are screenshots of the doc and emulator [before][2] and [after][3]. The title, background color, image, and ad presence are all determined by the doc's values. I might look into building an API if my app got more complex or needed user-dependent behavior, but if I want to turn off ads for my users on days when [LOCLAS SPORTS TEAM] wins, I can do that with minor effort and no expense.
+The loop makes it a little hard to folllow, but we start with "Fatty Special", then change to "Lucky Charms". If that gif isn't working, here are screenshots of the doc and emulator [before][2] and [after][3]. The title, background color, image, and ad presence are all determined by the doc's values. I might look into building an API if my app got more complex or needed user-dependent behavior, but if I want to turn off ads for my users on days when [LOCAL SPORTS TEAM] wins, I can do that with minor effort and no expense.
 
 The backend doc used in WhatIHadForBreafast is:
 https://docs.google.com/spreadsheets/d/18JyepUBU2-QAF4agQo7BI25fe5gARfxBr5AvBHFkgpg/edit#gid=0
@@ -50,7 +50,7 @@ The http call made to get the CSV data can change at Google's whim, and this wil
 
 There are more solid solutions built around this idea that involve publishing your doc to the Web as a public page, then getting the data back as JSON, though in my tests, the server response was very slow and the payload was padded with extra data.
 
-Thanks to Jake Wharton's [Picasso][4] for making image-downloading easy.
+Thanks to Jake Wharton's [Picasso][4] for making downloading images easy.
 
 [1]:https://github.com/briandherbert/WhatIHadForBreakfast/blob/master/src/com/example/whatihadforbreakfast/DuctTapeBackend.java 
 [2]:https://raw.githubusercontent.com/briandherbert/WhatIHadForBreakfast/photos/photos/fattySides.png
